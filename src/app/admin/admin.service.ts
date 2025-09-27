@@ -12,15 +12,15 @@ export class AdminService {
   constructor(private http: HttpClient) {}
 
   getTrainingData(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/training`);
+    return this.http.get(`${this.apiUrl}training`);
   }
 
   getContactData(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/contact`);
+    return this.http.get(`${this.apiUrl}contact`);
   }
 
   getHireData(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/hire`);
+    return this.http.get(`${this.apiUrl}hire`);
   }
 
   deleteTraining(id: string): Observable<any> {
