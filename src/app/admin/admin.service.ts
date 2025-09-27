@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AdminService {
-  private apiUrl = 'http://localhost:3000/api';
+  private apiUrl = 'https://backend-q9mw.onrender.com/';
 
   constructor(private http: HttpClient) {}
 
