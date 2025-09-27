@@ -1,0 +1,170 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8eefa; /* dark background */
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    text-underline-offset: none;
+    img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    // img .name{
+    //   height: 80px;
+    //   width: 80px;
+    // }
+    span {
+      font-size: 30px;
+      font-weight: bold;
+      color: #080a0b;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 18px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #310ff0; /* orange highlight */
+      }
+    }
+  }
+}
+
+
+/* Home Section */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #1f2937, #111827); /* gradient bg */
+  color: #f9fafb;
+  text-align: center;
+  padding: 0 20px;
+
+  .home-content {
+    max-width: 700px;
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+ .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #f97316;   /* bright orange */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background: #ea580c;   /* darker orange on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+  }
+}
+////////
+@media (max-width: 768px) {
+  /* This ensures the navbar content is a single column */
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  /* Centers the logo and its text */
+  .navbar .logo {
+    flex-direction: column;
+    align-items: center; /* This is key for centering the image and text */
+    margin-bottom: 15px; /* Added some space below the logo */
+  }
+
+  .navbar .logo img {
+    height: 40px;
+    margin-right: 0;
+  }
+
+  .navbar .logo span {
+    font-size: 24px;
+  }
+
+  /* This is the main part for aligning the nav links */
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 20px; /* Increased the space between links */
+    padding: 0;
+    width: 100%;
+    align-items: center; /* This centers the list items horizontally */
+  }
+
+  /* Ensures each list item fills the width for better alignment */
+  .navbar .nav-links li {
+    width: 100%;
+    text-align: center; /* Centers the text within each list item */
+  }
+
+  .navbar .nav-links li a {
+    font-size: 18px; /* Kept the font size consistent */
+    display: block; /* Makes the entire link clickable and block-level */
+  }
+}
+
+///////////////
+
+@media (max-width: 768px) {
+  .home {
+    padding: 0 15px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .home-content .btn {
+    padding: 10px 20px;
+  }
+}
+ 

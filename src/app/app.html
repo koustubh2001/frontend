@@ -1,0 +1,39 @@
+<nav class="navbar">
+  <div class="logo">
+    <a href="Home"><img src="AIT.png" alt="Logo" /></a>
+    <!-- <a href="Home"><img src="AITlogo.png" alt="Logo" /></a> -->
+    <a href="Home"
+      ><span id="header">AIT <span style="color: blue">Academy</span> </span></a
+    >
+    <!-- <img src="AITname.png" alt="ait image" class="name"> -->
+  </div>
+  <ul class="nav-links">
+    <li><a routerLink="Home">Home</a></li>
+    <!-- <li class="dropdown">
+      <a class="dropbtn">All Courses</a>
+      <div class="dropdown-content">
+        <a href="#">Course 1</a>
+        <a href="#">Course 2</a>
+        <a href="#">Course 3</a>
+      </div>
+    </li> -->
+    <!-- <li><a routerLink="AllCourses">All Courses</a></li> -->
+    <li><a routerLink="office-center">Office Centers</a></li>
+    <li><a routerLink="online-courses">Online Courses</a></li>
+    <li><a routerLink="corporate-training">Corporate Training</a></li>
+    <li><a routerLink="Hire">Hire From Us</a></li>
+    <li><a routerLink="Placement">Placements</a></li>
+    <li><a routerLink="Contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- Home Section -->
+<!-- <section class="home">
+  <h1>Welcome to AIT Academy</h1>
+  <button class="btn" (click)="onBookDemoClick()">Book Demo</button>
+</section>
+
+<app-book-demo *ngIf="showModal" (close)="close()" (submit)="onSubmit($event)"> </app-book-demo> -->
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>

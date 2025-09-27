@@ -1,0 +1,113 @@
+ body {
+    font-family: "Poppins", sans-serif;
+    background: #f8f9fb;
+    margin: 0;
+    padding: 30px;  
+     
+    
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding-top: 30px;
+     
+  }
+
+  .courses a {
+     text-decoration: none;
+     
+  }
+
+  .course-card {
+    padding: 25px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .course-card i {
+    font-size: 28px;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .course-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .course-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  .course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+
+  /* Color themes for each card */
+  .rest { background: linear-gradient(135deg, #6a11cb, #2575fc); }
+  .python { background: linear-gradient(135deg, #f7971e, #ffd200); }
+  .selenium { background: linear-gradient(135deg, #43cea2, #185a9d); }
+  .sql { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+  .aws { background: linear-gradient(135deg, #ff7e5f, #feb47b); }
+  .appium { background: linear-gradient(135deg, #e94057, #8a2387); }
+  .devops { background: linear-gradient(135deg, #00b09b, #96c93d); }
+  .manual { background: linear-gradient(135deg, #ff6a00, #ee0979); }
+  .jmeter { background: linear-gradient(135deg, #11998e, #38ef7d); }
+  .security { background: linear-gradient(135deg, #232526, #414345); }
+  .ai { background: linear-gradient(135deg, #4776e6, #8e54e9); }
+  .postman { background: linear-gradient(135deg, #ff512f, #dd2476); }
+  .junit { background: linear-gradient(135deg, #56ab2f, #a8e063); }
+  .jenkins { background: linear-gradient(135deg, #36d1dc, #5b86e5); }
+  .cypress { background: linear-gradient(135deg, #141e30, #243b55); }
+
+  // //////////
+
+
+  /* General container for the entire section */
+.course-highlights-container {
+  background-color: #f7f7f7; /* The light grey background color */
+  padding: 40px; /* Adjust padding to control the inner spacing */
+  font-family: Arial, sans-serif; /* A common sans-serif font */
+  color: #333; /* Dark grey for text for better readability */
+}
+
+/* Main heading "Highlights about the Course" */
+.course-highlights-container h2 {
+  font-size: 2.2rem; /* Larger font size for the main heading */
+  font-weight: 600; /* Bold to semi-bold font weight */
+  margin-bottom: 25px; /* Spacing below the main heading */
+}
+
+/* Individual section styling (e.g., "Who this course is for?") */
+.section {
+  margin-bottom: 20px; /* Space between each section */
+}
+
+/* Subheadings like "Who this course is for?" */
+.section h3 {
+  font-size: 1.2rem;
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 10px; /* Spacing below the subheading */
+}
+
+/* The list and list items */
+.section ul {
+  list-style-type: none; /* Removes the bullet points */
+  padding-left: 0; /* Removes default padding from the list */
+  margin: 0;
+}
+
+.section li {
+  line-height: 1.6; /* Improves readability of the text */
+  font-size: 1rem; /* Standard font size for the list item text */
+  color: #555; /* A slightly lighter color for the body text */
+}

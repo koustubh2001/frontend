@@ -1,0 +1,72 @@
+<h1>Admin Dashboard</h1>
+
+<!-- Tabs -->
+<div class="tabs">
+  <button [ngClass]="{active: activeTab==='training'}" (click)="setTab('training')">Training</button>
+  <button [ngClass]="{active: activeTab==='contact'}" (click)="setTab('contact')">Contact</button>
+  <button [ngClass]="{active: activeTab==='hire'}" (click)="setTab('hire')">Hire</button>
+</div>
+
+<!-- Training Section -->
+<div class="tab-content" *ngIf="activeTab==='training'">
+  <h2>Corporate Training Data</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Email</th><th>Company</th><th>Message</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of trainings">
+        <td>{{t.name}}</td>
+        <td>{{t.email}}</td>
+        <td>{{t.company}}</td>
+        <td>{{t.message}}</td>
+        <td><button (click)="deleteTraining(t._id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Contact Section -->
+<div class="tab-content" *ngIf="activeTab==='contact'">
+  <h2>Contact Us Data</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th><th>Email</th><th>Phone</th><th>Message</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of contacts">
+        <td>{{c.name}}</td>
+        <td>{{c.email}}</td>
+        <td>{{c.phone}}</td>
+        <td>{{c.message}}</td>
+        <td><button (click)="deleteContact(c._id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Hire Section -->
+<div class="tab-content" *ngIf="activeTab==='hire'">
+  <h2>Hire From Us Data</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Full Name</th><th>Email</th><th>Mobile</th><th>Company</th><th>Message</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let h of hires">
+        <td>{{h.fullName}}</td>
+        <td>{{h.email}}</td>
+        <td>{{h.mobile}}</td>
+        <td>{{h.company}}</td>
+        <td>{{h.message}}</td>
+        <td><button (click)="deleteHire(h._id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

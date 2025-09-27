@@ -1,0 +1,86 @@
+<section class="contact-section"> 
+  <div class="contact-header">
+    <h2>
+      We are eager to <span class="highlight">hear from you!</span>
+    </h2>
+    <p>Feel free to get in touch with the team if you have any questions</p>
+  </div>
+ 
+  <div class="contact-box"> 
+    <div class="contact-form">
+      <h3>Fill out the form to hear from our Team!</h3>
+
+      <form (ngSubmit)="onSubmit()">
+  <label>* Name</label>
+  <input type="text" [(ngModel)]="contactData.name" name="name" required />
+
+  <label>Phone</label>
+  <input type="text" [(ngModel)]="contactData.phone" name="phone" />
+
+  <label>* Email</label>
+  <input type="email" [(ngModel)]="contactData.email" name="email" required />
+
+  <label>* Your Message</label>
+  <textarea [(ngModel)]="contactData.message" name="message" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+    </div>
+ 
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+
+      <div class="info-block">
+        <h4>Bangaluru</h4>
+        <p>📞 9148209968 , 9686700500, 9686800700</p>
+        <p>✉ enquiry@aitacademy.com</p>
+        <p>#6 & 8, 26/2, 100 Ft. Rd, 6th Phase, J.P. Nagar, Bengaluru - 560078</p>
+      </div>
+
+      <div class="info-block">
+        <h4>Mysuru</h4>
+        <p>📞 7338075253 , 9686700500 </p>
+        <p>✉ enquiry@aitacademy.com</p>
+        <p>47,8th Cross ,Near Federal Bank , CPL Layout , Mysuru-570002</p>
+      </div>
+
+      <div class="info-block">
+        <h4>Pune</h4>
+        <p>📞9148637747</p>
+        <p>✉ enquiry@aitacademy.com</p>
+        <p>#6 , 57/5 , 7th Cross , Meera Nagar , Koregaon Park , Pune - 411001</p>
+      </div>
+
+      <div class="info-block">
+        <h4>Hyderabad</h4>
+        <p>📞 9145631299</p>
+        <p>✉ enquiry@aitacademy.com</p>
+        <p>11 , 4th Floor , Sarath City Capital Mall Miyapur Rd , Near White Field , Hyderabad - 500084</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+
+<section class="contact-section">
+  <div class="contact-container">
+    
+    <div class="contact-image">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.Z5psbdVm5qiYGl1VyHaNrAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Students group">
+    </div>
+ 
+    <div class="contact-info">
+      <h2>For Admissions, Contact us at</h2>
+      <div class="contact-grid">
+        <p>📞 +91 9148209968</p>
+        <p>📞 +91 7338075253</p>
+        <p>📞 +91 8088720282</p>
+        <p>📞 +91 7514889697</p>
+        <p>📞 +91 6892543597</p>
+      </div>
+      <p>✉️ connect@aitacademy.com</p>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,120 @@
+/* Color Variables */
+$primary-text: #212529;
+$secondary-text: #6c757d;
+$link-color: #007bff;
+$divider-color: #3b19e6;
+$background-color: #f8f9fa;
+$card-background: #fff;
+$list-item-color: #495057;
+
+/* Font Variables */
+$font-family: Arial, sans-serif;
+
+.our-locations {
+  font-family: $font-family;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: $background-color;
+
+  .header-content {
+    margin-bottom: 50px;
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $primary-text;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: $secondary-text;
+      margin-top: 10px;
+    }
+  }
+
+  .location-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .card {
+    background-color: $card-background;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+
+    .card-image {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: left;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      .city {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $primary-text;
+        margin: 0;
+      }
+
+      .type {
+        font-size: 0.8rem;
+        color: $secondary-text;
+        margin: 5px 0 10px 0;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .divider {
+        border: 0;
+        height: 2px;
+        background-color: $divider-color;
+        margin: 10px 0 20px 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          font-size: 0.9rem;
+          color: $list-item-color;
+          line-height: 1.6;
+
+          .label {
+            font-weight: 600;
+          }
+
+          a {
+            color: $link-color;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

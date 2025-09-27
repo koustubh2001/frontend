@@ -1,0 +1,90 @@
+/* Container for the entire section with the gradient and shape */
+.hero-container {
+  /* The subtle gradient from light pink/purple to white */
+  background: linear-gradient(135deg, #f0e6ff, #ffffff);
+  
+  /* Apply the diagonal cut using clip-path */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  
+  /* Set a fixed height for the container, adjust as needed */
+  height: 400px;
+  
+  /* Use flexbox to center content horizontally and vertically */
+  display: flex;
+  align-items: center;
+  padding-left: 10%; /* Adjust content position from the left edge */
+}
+
+/* Container for all the text and interactive elements */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between elements */
+  max-width: 500px; /* Prevents text from stretching too wide */
+}
+
+/* Main heading styling */
+.hero-content h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #444; /* Dark grey for the text */
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Button styling */
+.open-jobs-btn {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.open-jobs-btn:hover {
+  background-color: #333;
+}
+
+/* Search bar and icon layout */
+.search-bar-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Input field styling */
+.search-bar-container input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  font-size: 1rem;
+  color: #555;
+  outline: none;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+/* Placeholder text style */
+.search-bar-container input::placeholder {
+  color: #999;
+}
+
+/* Search icon wrapper */
+.search-icon-wrapper {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  fill: #888; /* Color of the magnifying glass icon */
+}

@@ -1,0 +1,205 @@
+/* Section Layout */
+.hero-section {
+  padding: 60px;
+  background: linear-gradient(to right, #fff, #fff8f2);
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Left Text */
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d2d2d;
+  line-height: 1.3;
+}
+
+.hero-text h1 span {
+  color: #0ba3f5; /* orange highlight */
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin: 20px 0 30px;
+  color: #555;
+}
+
+.contact-details p {
+  font-size: 15px;
+  margin: 6px 0;
+  color: #333;
+}
+
+.contact-details i {
+  color: #ff6a00;
+  margin-right: 8px;
+}
+
+/* Right Form */
+.hero-form {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #3ca3f7;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.input-group i,
+.input-group .flag {
+  margin-right: 10px;
+  color: #12039a;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.textarea {
+  height: 100px;
+}
+
+.textarea textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-submit {
+  width: 100%;
+  background: linear-gradient(45deg, #63b9fb, #657efb);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(45deg, #28f00e, #19f419);
+}
+
+// ////////////////////////
+
+.hiring-process {
+  text-align: center;
+  padding: 60px 20px;
+  background: #faf8fc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hiring-process h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Each Step */
+.step {
+  position: relative;
+  width: 200px;
+  text-align: center;
+}
+
+.step p {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Circle Card */
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px dashed #228cee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 6px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #3185fb, #4059fd);
+}
+
+.circle img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Orange Arrow */
+.step::after {
+  content: "➔";
+  font-size: 24px;
+  color: #2a0de6;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .process-steps {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .step::after {
+    display: none;
+  }
+}
+
