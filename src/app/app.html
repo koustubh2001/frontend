@@ -7,16 +7,15 @@
     >
     <!-- <img src="AITname.png" alt="ait image" class="name"> -->
   </div>
-  <ul class="nav-links">
+
+   <div class="hamburger" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <ul class="nav-links" [class.active]="menuOpen">
     <li><a routerLink="Home">Home</a></li>
-    <!-- <li class="dropdown">
-      <a class="dropbtn">All Courses</a>
-      <div class="dropdown-content">
-        <a href="#">Course 1</a>
-        <a href="#">Course 2</a>
-        <a href="#">Course 3</a>
-      </div>
-    </li> -->
+    
     <!-- <li><a routerLink="AllCourses">All Courses</a></li> -->
     <li><a routerLink="office-center">Office Centers</a></li>
     <li><a routerLink="online-courses">Online Courses</a></li>
@@ -26,14 +25,7 @@
     <li><a routerLink="Contact">Contact Us</a></li>
   </ul>
 </nav>
-
-<!-- Home Section -->
-<!-- <section class="home">
-  <h1>Welcome to AIT Academy</h1>
-  <button class="btn" (click)="onBookDemoClick()">Book Demo</button>
-</section>
-
-<app-book-demo *ngIf="showModal" (close)="close()" (submit)="onSubmit($event)"> </app-book-demo> -->
+ 
 
 <router-outlet></router-outlet>
 <app-footer></app-footer>
