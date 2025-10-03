@@ -31,7 +31,7 @@ export class CorporateTraining {
     };
 
     // Call backend API
-    this.http.post('http://localhost:4000/api/training', formData)
+    this.http.post('http://localhost:3000/api/training', formData)
       .subscribe({
         next: (res) => {
           console.log('Form submitted successfully:', res);
