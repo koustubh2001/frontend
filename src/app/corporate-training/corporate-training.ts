@@ -31,7 +31,7 @@ export class CorporateTraining {
     };
 
     // Call backend API
-    this.http.post('https://my-backend.onrender.com/api/training', formData)
+    this.http.post('https://backend-q9mw.onrender.com/api/training', formData)
       .subscribe({
         next: (res) => {
           console.log('Form submitted successfully:', res);
