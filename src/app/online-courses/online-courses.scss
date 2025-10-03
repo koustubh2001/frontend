@@ -14,6 +14,11 @@
     padding-top: 30px;
      
   }
+  .title{
+    line-height: 1.4; 
+  word-wrap: break-word;  
+  text-align: center;
+  }
 
   .courses a {
      text-decoration: none;
@@ -28,6 +33,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
   }
+  
 
   .course-card i {
     font-size: 28px;
