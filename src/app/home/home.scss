@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 4rem 8%;
   background: linear-gradient(to right, #fff7f0, #fffdfc); 
  
@@ -112,6 +113,10 @@
     font-weight: bold;
     margin-bottom: 40px;
     color: #000;
+    line-height: 1.4; 
+  word-wrap: break-word;  
+  text-align: center;
+
   }
 
   .content {
@@ -175,6 +180,11 @@
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+.title{
+  line-height: 1.4; 
+  word-wrap: break-word;  
+  text-align: center;
+}
 
 .certification h2 {
   font-size: 28px;
@@ -222,6 +232,11 @@
 .partners-container {
   max-width: 1200px;
   margin: auto;
+}
+.title{
+  line-height: 1.4; 
+  word-wrap: break-word;  
+  text-align: center;
 }
 
 .partners h2 {
@@ -281,6 +296,11 @@
 .reviews h2 span {
   color: #4a4afc;
 }
+.title{
+  line-height: 1.4; 
+  word-wrap: break-word;  
+  text-align: center;
+} 
 
 .reviews-slider {
   display: flex;
