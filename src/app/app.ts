@@ -13,12 +13,16 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App { 
   showModal = false;
+   menuOpen = false;
 
   onBookDemoClick() {
     this.showModal = true;
   }   
   close() {
     this.showModal = false;
+  }
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen; // toggles menu
   }
  
   onSubmit(formData: { fullName: string; email: string; mobile: string; message: string }) {
