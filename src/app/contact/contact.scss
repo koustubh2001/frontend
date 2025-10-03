@@ -185,3 +185,173 @@
   margin: 6px 0;
 }
 
+// /////////
+
+/* ==================== Full Responsive for Contact Sections ==================== */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .contact-box,
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info,
+  .contact-image {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .contact-header h2 {
+    font-size: 24px;
+  }
+
+  .contact-header p {
+    font-size: 15px;
+  }
+
+  .contact-info h2,
+  .contact-info h3 {
+    font-size: 20px;
+  }
+
+  .contact-info p,
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+  }
+}
+
+/* Small screens / Tablets */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 20px 15px;
+  }
+
+  .contact-header h2 {
+    font-size: 22px;
+  }
+
+  .contact-header p {
+    font-size: 14px;
+  }
+
+  .contact-form h3 {
+    font-size: 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact-info h2,
+  .contact-info h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
+
+/* Extra small screens / Mobiles */
+@media (max-width: 480px) {
+  .contact-header h2 {
+    font-size: 20px;
+  }
+
+  .contact-header p {
+    font-size: 13px;
+  }
+
+  .contact-form h3 {
+    font-size: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .contact-form button {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .contact-info h2,
+  .contact-info h3 {
+    font-size: 16px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 8px 0;
+  }
+
+  .contact-info p {
+    font-size: 13px;
+  }
+
+  .contact-info {
+    padding: 15px;
+  }
+
+  .contact-image img {
+    height: auto;
+  }
+}
+
+/* Extra tweaks for very narrow screens */
+@media (max-width: 360px) {
+  .contact-header h2 {
+    font-size: 18px;
+  }
+
+  .contact-header p {
+    font-size: 12px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .contact-info h2,
+  .contact-info h3 {
+    font-size: 15px;
+  }
+}
